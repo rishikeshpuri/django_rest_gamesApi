@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'i4fni$3)wg397l0ykv&oyv0!j1+#70_u%vh-#2@7av5tb*v_!q'
-
+# SECRET_KEY = 'i4fni$3)wg397l0ykv&oyv0!j1+#70_u%vh-#2@7av5tb*v_!q'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangogameapi.herokuapp.com']
 
 
 # Application definition
